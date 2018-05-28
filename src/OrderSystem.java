@@ -57,7 +57,9 @@ public class OrderSystem {
 			//print total to console
 			System.out.println("Subtotal: " + total);
 			System.out.println("**** THANK YOU FOR YOUR ORDER! ****");
+			
 		}
+		
 				
 		if (delivery.equals("yes"))
 		{
@@ -128,14 +130,16 @@ public class OrderSystem {
 				System.out.println("**** THANK YOU FOR YOUR ORDER! ****");
 				}
 			}
-		if (zipcode < 60441)
+		if (zipcode != 0 && zipcode < 60441)
 		{
 			System.out.println("Delivery unavailable");
+			System.out.println("*** PLEASE CHECK BACK AS WE EXPAND! ***");
 			}
 		
-		if (zipcode > 60451)
+		if (zipcode != 0 && zipcode > 60451)
 		{
 			System.out.println("Delivery unavailable");
+			System.out.println("*** PLEASE CHECK BACK AS WE EXPAND! ***");
 			}
 		}
 	}
